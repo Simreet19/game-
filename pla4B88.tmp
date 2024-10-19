@@ -1,0 +1,139 @@
+[gd_scene load_steps=11 format=3 uid="uid://d0v2ffshpuptr"]
+
+[ext_resource type="Script" path="res://scenes/PlayerSelect.gd" id="1_c0fsw"]
+[ext_resource type="Texture2D" uid="uid://d1argul4ombx7" path="res://Assets/characters/fire_knight.png" id="2_cm5en"]
+[ext_resource type="Texture2D" uid="uid://hfvhixy1207m" path="res://Assets/characters/wind_hashashin.png" id="3_e7411"]
+[ext_resource type="Texture2D" uid="uid://cepfm8xuww7o6" path="res://Assets/characters/water_priestess.png" id="4_cpd3r"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_e2r8g"]
+bg_color = Color(0.985746, 0.981376, 0.979783, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ngkvx"]
+bg_color = Color(0.65098, 0.580392, 0.552941, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cjpx4"]
+bg_color = Color(0.303233, 0.303233, 0.303233, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_7ignn"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_474h4"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_fiirq"]
+
+[node name="PlayerSelect" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_c0fsw")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -1.0
+offset_top = -9.0
+offset_right = -1.0
+offset_bottom = -9.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="p1image" type="TextureRect" parent="Panel"]
+layout_mode = 0
+offset_left = 45.0
+offset_top = 357.0
+offset_right = 230.0
+offset_bottom = 542.0
+texture = ExtResource("2_cm5en")
+
+[node name="p2image" type="TextureRect" parent="Panel"]
+layout_mode = 0
+offset_left = 479.0
+offset_top = 362.0
+offset_right = 663.0
+offset_bottom = 541.0
+texture = ExtResource("3_e7411")
+expand_mode = 1
+
+[node name="p3image" type="TextureRect" parent="Panel"]
+layout_mode = 0
+offset_left = 904.0
+offset_top = 361.0
+offset_right = 1091.0
+offset_bottom = 542.0
+texture = ExtResource("4_cpd3r")
+expand_mode = 1
+
+[node name="Player1" type="Button" parent="."]
+layout_mode = 1
+offset_left = 43.0
+offset_top = 559.0
+offset_right = 237.0
+offset_bottom = 601.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_e2r8g")
+theme_override_styles/hover = SubResource("StyleBoxFlat_ngkvx")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_cjpx4")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_7ignn")
+text = "PLAYER 1"
+
+[node name="Player2" type="Button" parent="."]
+layout_mode = 1
+offset_left = 901.0
+offset_top = 557.0
+offset_right = 1098.0
+offset_bottom = 599.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_e2r8g")
+theme_override_styles/hover = SubResource("StyleBoxFlat_ngkvx")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_cjpx4")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_474h4")
+text = "PLAYER 3"
+
+[node name="Player3" type="Button" parent="."]
+layout_mode = 1
+offset_left = 470.0
+offset_top = 558.0
+offset_right = 665.0
+offset_bottom = 600.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_e2r8g")
+theme_override_styles/hover = SubResource("StyleBoxFlat_ngkvx")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_cjpx4")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_fiirq")
+text = "PLAYER 2"

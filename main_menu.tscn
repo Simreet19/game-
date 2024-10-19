@@ -1,40 +1,44 @@
-[gd_scene load_steps=8 format=3 uid="uid://db1bu1jwkiil0"]
+[gd_scene load_steps=10 format=3 uid="uid://db1bu1jwkiil0"]
 
-[ext_resource type="Script" path="res://main_menu.gd" id="1_nvydu"]
-[ext_resource type="Texture2D" uid="uid://dh4rm0epx2e4r" path="res://bg/bca6695f-613f-43d6-bb3a-1c3a7647a4b5.jpg" id="1_sgnry"]
+[ext_resource type="Script" path="res://gdscript/main_menu.gd" id="1_nvydu"]
+[ext_resource type="Texture2D" uid="uid://bax1oie011ixy" path="res://Assets/bg/bca6695f-613f-43d6-bb3a-1c3a7647a4b5.jpg" id="1_sgnry"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_r413p"]
 texture = ExtResource("1_sgnry")
 modulate_color = Color(0.372549, 0.372549, 0.372549, 1)
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rdich"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wxwc4"]
 bg_color = Color(1, 1, 1, 1)
 corner_radius_top_left = 16
 corner_radius_top_right = 16
 corner_radius_bottom_right = 16
 corner_radius_bottom_left = 16
 shadow_size = 5
-shadow_offset = Vector2(0, 3.41)
+shadow_offset = Vector2(0, 3.14)
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_nm1y2"]
-bg_color = Color(0.709804, 0.709804, 0.709804, 1)
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rok4i"]
+bg_color = Color(0.670588, 0.670588, 0.670588, 1)
 corner_radius_top_left = 16
 corner_radius_top_right = 16
 corner_radius_bottom_right = 16
 corner_radius_bottom_left = 16
 shadow_size = 5
-shadow_offset = Vector2(0, 3.41)
+shadow_offset = Vector2(0, 3.14)
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_uo8mj"]
-bg_color = Color(0.345098, 0.345098, 0.345098, 1)
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4vcwl"]
+bg_color = Color(0.317647, 0.317647, 0.317647, 1)
 corner_radius_top_left = 16
 corner_radius_top_right = 16
 corner_radius_bottom_right = 16
 corner_radius_bottom_left = 16
 shadow_size = 5
-shadow_offset = Vector2(0, 3.41)
+shadow_offset = Vector2(0, 3.14)
 
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_17b4g"]
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_f7w3y"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_bpeoh"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_7gyf8"]
 
 [node name="MainMenu" type="Control"]
 layout_mode = 3
@@ -83,26 +87,50 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -202.0
-offset_top = -129.5
-offset_right = 202.0
-offset_bottom = 129.5
+offset_left = -225.0
+offset_top = -89.5
+offset_right = 225.0
+offset_bottom = 89.5
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_constants/separation = 16
 
-[node name="back" type="Button" parent="VBoxContainer"]
+[node name="Start" type="Button" parent="VBoxContainer"]
 layout_mode = 2
-size_flags_vertical = 3
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
 theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
 theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 35
-theme_override_styles/normal = SubResource("StyleBoxFlat_rdich")
-theme_override_styles/hover = SubResource("StyleBoxFlat_nm1y2")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_uo8mj")
-theme_override_styles/focus = SubResource("StyleBoxEmpty_17b4g")
-text = "EXIT"
+theme_override_styles/normal = SubResource("StyleBoxFlat_wxwc4")
+theme_override_styles/hover = SubResource("StyleBoxFlat_rok4i")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_4vcwl")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_f7w3y")
+text = "STORY MODE"
 
-[connection signal="pressed" from="VBoxContainer/back" to="." method="_on_exit_pressed"]
+[node name="Options" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 35
+theme_override_styles/normal = SubResource("StyleBoxFlat_wxwc4")
+theme_override_styles/hover = SubResource("StyleBoxFlat_rok4i")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_4vcwl")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_bpeoh")
+text = "OPTIONS"
+
+[node name="Quit" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 35
+theme_override_styles/normal = SubResource("StyleBoxFlat_wxwc4")
+theme_override_styles/hover = SubResource("StyleBoxFlat_rok4i")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_4vcwl")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_7gyf8")
+text = "QUIT
+"

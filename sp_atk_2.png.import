@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dyph3e8modrbx"
-path="res://.godot/imported/sp_atk_2.png-1ed1c1b4b3881f40aa498d27ea852ac6.ctex"
+uid="uid://dggwvw0i46n5n"
+path="res://.godot/imported/sp_atk_2.png-9cdebb2ed6f4e6ebc3990363b1049633.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Elementals_water_priestess_FREE_v1.1/Elementals_water_priestess_FREE_v1.1/png/10_sp_atk/sp_atk_2.png"
-dest_files=["res://.godot/imported/sp_atk_2.png-1ed1c1b4b3881f40aa498d27ea852ac6.ctex"]
+source_file="res://Assets/elementals_wind_hashashin_FREE_v1.1/elementals_wind_hashashin_FREE_v1.1/PNG/sp_atk/sp_atk_2.png"
+dest_files=["res://.godot/imported/sp_atk_2.png-9cdebb2ed6f4e6ebc3990363b1049633.ctex"]
 
 [params]
 

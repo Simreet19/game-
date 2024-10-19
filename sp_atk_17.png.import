@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cojbrtub6vsb4"
-path="res://.godot/imported/sp_atk_17.png-f2427293ed6ad03ca6cdcc4a6d8e4859.ctex"
+uid="uid://46bwfarikjei"
+path="res://.godot/imported/sp_atk_17.png-a67af3801a5c22c16e9dd40a89a0a090.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Elementals_fire_knight_FREE_v1.1/png/fire_knight/08_sp_atk/sp_atk_17.png"
-dest_files=["res://.godot/imported/sp_atk_17.png-f2427293ed6ad03ca6cdcc4a6d8e4859.ctex"]
+source_file="res://Assets/Elementals_water_priestess_FREE_v1.1/Elementals_water_priestess_FREE_v1.1/png/10_sp_atk/sp_atk_17.png"
+dest_files=["res://.godot/imported/sp_atk_17.png-a67af3801a5c22c16e9dd40a89a0a090.ctex"]
 
 [params]
 
